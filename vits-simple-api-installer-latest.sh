@@ -192,7 +192,7 @@ if [ "$choice_download_pyopenjtalk" -eq 1 ]; then
   mkdir -p pyopenjtalk
   echo -e "${MESSAGES["DOWNLOADING"]}"
   download_with_fallback open_jtalk_dic_utf_8-1.11.tar.gz \
-    "https://github.com/r9y9/open_jtalk/releases/download/v1.11.1/open_jtalk_dic_utf_8-1.11.tar.gz" \
+    "https://ghproxy.com/https://github.com/r9y9/open_jtalk/releases/download/v1.11.1/open_jtalk_dic_utf_8-1.11.tar.gz" \
     "https://ghproxy.com/https://github.com/r9y9/open_jtalk/releases/download/v1.11.1/open_jtalk_dic_utf_8-1.11.tar.gz"
   echo -e "${MESSAGES["UNZIPPING"]}"
   tar -xzvf open_jtalk_dic_utf_8-1.11.tar.gz -C pyopenjtalk/
