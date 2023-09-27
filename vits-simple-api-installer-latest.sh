@@ -36,7 +36,7 @@ EN_MESSAGES=(
   ["IMPORT_NOTICE"]="If the vits model is not imported, it cannot be used. Import the model in the configuration file directory."
   ["RESTART_NOTICE"]="After modifying the configuration file, restart the docker container for the modification to take effect."
   ["ISSUE_NOTICE"]="If you have any questions, please put them in the issues."
-  ["GITHUB_LINK"]="https://github.com/Artrajz/vits-simple-api"
+  ["GITHUB_LINK"]="https://github.com/mushan0x0/vits-simple-api"
 )
 
 ZH_MESSAGES=(
@@ -67,7 +67,7 @@ ZH_MESSAGES=(
   ["IMPORT_NOTICE"]="如果vits模型没有被导入，它是无法使用的。请在配置文件目录中导入模型。"
   ["RESTART_NOTICE"]="修改配置文件后，请重启docker容器以使修改生效。"
   ["ISSUE_NOTICE"]="如果你有任何问题，请在issues中提出，或者加入q群提问。"
-  ["GITHUB_LINK"]="https://github.com/Artrajz/vits-simple-api"
+  ["GITHUB_LINK"]="https://github.com/mushan0x0/vits-simple-api"
 )
 
 echo -e "${PLAIN}${GREEN}Choose a language/选择语言: ${PLAIN}"
@@ -122,15 +122,15 @@ while true; do
   1)
     echo -e "${MESSAGES["DOWNLOADING"]}"
     download_with_fallback docker-compose.yaml \
-      "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/docker-compose.yaml" \
-      "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/docker-compose.yaml"
+      "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/docker-compose.yaml" \
+      "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/docker-compose.yaml"
     break
     ;;
   2)
     echo -e "${MESSAGES["DOWNLOADING"]}"
     download_with_fallback docker-compose.yaml \
-      "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/docker-compose-gpu.yaml" \
-      "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/docker-compose-gpu.yaml"
+      "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/docker-compose-gpu.yaml" \
+      "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/docker-compose-gpu.yaml"
     break
     ;;
   *)
@@ -166,23 +166,23 @@ echo -e "${YELLOW}${MESSAGES["DOWNLOAD_CONFIG"]}${PLAIN}"
 
 if [ ! -f config.py ]; then
   download_with_fallback config.py \
-    "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/config.py" \
-    "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/config.py"
+    "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/config.py" \
+    "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/config.py"
 fi
 
 if [ ! -f gunicorn_config.py ]; then
   download_with_fallback gunicorn_config.py \
-    "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/gunicorn_config.py" \
-    "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/gunicorn_config.py"
+    "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/gunicorn_config.py" \
+    "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/gunicorn_config.py"
 fi
 
 download_with_fallback config.example.py \
-  "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/config.py" \
-  "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/config.py"
+  "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/config.py" \
+  "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/config.py"
 
 download_with_fallback gunicorn_config.example.py \
-  "https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/gunicorn_config.py" \
-  "https://ghproxy.com/https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/gunicorn_config.py"
+  "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/gunicorn_config.py" \
+  "https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/gunicorn_config.py"
 
 echo -e "${GREEN}${MESSAGES["DOWNLOAD_DICT"]}${PLAIN}"
 echo -e "${GREEN}${MESSAGES["MUST_DOWNLOAD_JP"]}${PLAIN}"

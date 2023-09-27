@@ -4,12 +4,12 @@
     <br/>
     <br/>
     <p>
-        <img src="https://img.shields.io/github/license/Artrajz/vits-simple-api">
+        <img src="https://img.shields.io/github/license/mushan0x0/vits-simple-api">
     	<img src="https://img.shields.io/badge/python-3.9%7C3.10-green">
-        <a href="https://hub.docker.com/r/artrajz/vits-simple-api">
-            <img src="https://img.shields.io/docker/pulls/artrajz/vits-simple-api"></a>
+        <a href="https://hub.docker.com/r/mushan0x0/vits-simple-api">
+            <img src="https://img.shields.io/docker/pulls/mushan0x0/vits-simple-api"></a>
     </p>
-    <a href="https://github.com/Artrajz/vits-simple-api/blob/main/README.md">English</a>|<a href="https://github.com/Artrajz/vits-simple-api/blob/main/README_zh.md">中文文档</a>
+    <a href="https://github.com/mushan0x0/vits-simple-api/blob/main/README.md">English</a>|<a href="https://github.com/mushan0x0/vits-simple-api/blob/main/README_zh.md">中文文档</a>
     <br/>
 </div>
 
@@ -33,7 +33,7 @@
 
 ## demo
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Artrajz/vits-simple-api)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/mushan0x0/vits-simple-api)
 
 Please note that different IDs may support different languages.[speakers](https://artrajz-vits-simple-api.hf.space/voice/speakers)
 
@@ -51,7 +51,7 @@ https://user-images.githubusercontent.com/73542220/237995061-c1f25b4e-dd86-438a-
 ### Docker image pull script
 
 ```
-bash -c "$(wget -O- https://raw.githubusercontent.com/Artrajz/vits-simple-api/main/vits-simple-api-installer-latest.sh)"
+bash -c "$(wget -O- https://ghproxy.com/https://raw.githubusercontent.com/mushan0x0/vits-simple-api/main/vits-simple-api-installer-latest.sh)"
 ```
 
 - The platforms currently supported by Docker images are `linux/amd64` and `linux/arm64`.(arm64 only has a CPU version)
@@ -136,7 +136,7 @@ Run the docker image pull script again
 
 ### Clone
 
-`git clone https://github.com/Artrajz/vits-simple-api.git`
+`git clone https://github.com/mushan0x0/vits-simple-api.git`
 
 ###  Download python dependencies 
 
