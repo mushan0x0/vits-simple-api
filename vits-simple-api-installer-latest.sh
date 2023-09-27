@@ -216,7 +216,7 @@ if [ "$choice_download_vits_chinese" -eq 1 ]; then
   else
     echo "${MESSAGES["CORRUPTED"]}"
     download_with_fallback vits/bert/prosody_model.pt \
-      "https://huggingface.co/spaces/maxmax20160403/vits_chinese/resolve/main/bert/prosody_model.pt"
+      "https://ghproxy.com/https://github.com/mushan0x0/vits-simple-api/releases/download/test/prosody_model.pt"
   fi
 
 fi
@@ -238,7 +238,7 @@ if [ "$choice_download_bert_vits2" -eq 1 ]; then
   else
     echo "${MESSAGES["CORRUPTED"]}"
     download_with_fallback bert_vits2/bert/chinese-roberta-wwm-ext-large/flax_model.msgpack \
-      "https://huggingface.co/hfl/chinese-roberta-wwm-ext-large/resolve/main/flax_model.msgpack"
+      "https://ghproxy.com/https://github.com/mushan0x0/vits-simple-api/releases/download/test/flax_model.msgpack"
   fi
 
   EXPECTED_MD5="15d7435868fef1bd4222ff7820149a2a"
@@ -251,7 +251,7 @@ if [ "$choice_download_bert_vits2" -eq 1 ]; then
   else
     echo ${MESSAGES["CORRUPTED"]}
     download_with_fallback bert_vits2/bert/chinese-roberta-wwm-ext-large/pytorch_model.bin \
-      "https://huggingface.co/hfl/chinese-roberta-wwm-ext-large/resolve/main/pytorch_model.bin"
+      "https://ghproxy.com/https://github.com/mushan0x0/vits-simple-api/releases/download/test/pytorch_model.bin"
   fi
 
   EXPECTED_MD5="d15991416bd4a86fa127c70d3c0f4779"
@@ -264,7 +264,7 @@ if [ "$choice_download_bert_vits2" -eq 1 ]; then
   else
     echo "${MESSAGES["CORRUPTED"]}"
     download_with_fallback bert_vits2/bert/chinese-roberta-wwm-ext-large/tf_model.h5 \
-      "https://huggingface.co/hfl/chinese-roberta-wwm-ext-large/resolve/main/tf_model.h5"
+      "https://ghproxy.com/https://github.com/mushan0x0/vits-simple-api/releases/download/test/tf_model.h5"
   fi
 
 fi
